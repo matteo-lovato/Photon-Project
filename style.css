@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  padding: 2rem;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+}
+
+.search-form {
+  padding: 2rem;
+  display: flex;
+}
+
+.search-form input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border: 2px solid rgb(42, 42, 173);
+}
+
+.search-form button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: rgb(42, 42, 173);
+  color: white;
+  cursor: pointer;
+}
+
+.gallery-img {
+  position: relative;
+}
+
+.gallery-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 0rem;
+  z-index: 1;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.gallery-info a {
+  color: white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+.gallery-info:hover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 1rem 0rem;
+  width: 90%;
+  margin: auto;
+  row-gap: 5rem;
+  column-gap: 3rem;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.more {
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  background: rgb(42, 42, 173);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.link-to-pexels {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-pexels {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 830px) {
+  .gallery-info {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: grey;
+    padding: 0.5rem 0rem;
+    height: 3rem;
+    opacity: 1;
+    background: none;
+  }
+
+  .gallery-info a {
+    color: grey;
+    text-decoration: none;
+  }
+}
