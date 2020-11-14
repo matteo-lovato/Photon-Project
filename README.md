@@ -1,4 +1,4 @@
-# PHOTON [![Netlify Status](https://api.netlify.com/api/v1/badges/9f332d66-ff84-4225-a4c3-8bbe23e6969b/deploy-status)](https://wonderful-kalam-7cb26d.netlify.app/)
+# PHOTON [![Netlify Status](https://api.netlify.com/api/v1/badges/9f332d66-ff84-4225-a4c3-8bbe23e6969b/deploy-status)](https://matteo-photon.netlify.app/)
 
 ## A website that loads random pictures
 
